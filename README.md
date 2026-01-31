@@ -32,7 +32,7 @@ A solução implementa uma arquitetura **Client-Server**, separando o Frontend (
 
 ### Frontend (SPA)
 - **Vue.js 3** (Composition API): Framework reativa.
-- **Vite**: Build tool rápida.
+- **Vite**: Build tool.
 - **Vue Router**: Gestão de navegação (rotas e guardas de autenticação).
 - **Axios**: Cliente HTTP para comunicação com a API (com Interceptors).
 
@@ -170,6 +170,7 @@ psql -U postgres -d gestao_projetos -f database/schema.sql
 2. **Integridade de Dados:** O sistema utiliza transações SQL (`BEGIN`, `COMMIT`, `ROLLBACK`) na criação de propostas. Isto garante que uma proposta só é gravada se todas as suas dependências (coorientadores, alunos, keywords) forem gravadas com sucesso.
 
 3. **Proteção de Rotas:** O Frontend utiliza "Navigation Guards" do Vue Router para impedir acesso a páginas privadas sem token. O Backend verifica o token JWT em cada pedido protegido.
+
 
 
 
