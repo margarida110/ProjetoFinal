@@ -82,7 +82,7 @@ projeto-final/
             └── PropostaForm.vue
 ---
 
-##  Pré-requisitos
+###  Pré-requisitos
 
 Certifique-se de que tem instalado:
 - [Node.js](https://nodejs.org/) (v16 ou superior)
@@ -91,7 +91,7 @@ Certifique-se de que tem instalado:
 
 ---
 
-## Instalação e Execução
+### Instalação e Execução
 
 Siga os passos pela ordem indicada.
 
@@ -169,5 +169,6 @@ psql -U postgres -d gestao_projetos -f database/schema.sql
 2. **Integridade de Dados:** O sistema utiliza transações SQL (`BEGIN`, `COMMIT`, `ROLLBACK`) na criação de propostas. Isto garante que uma proposta só é gravada se todas as suas dependências (coorientadores, alunos, keywords) forem gravadas com sucesso.
 
 3. **Proteção de Rotas:** O Frontend utiliza "Navigation Guards" do Vue Router para impedir acesso a páginas privadas sem token. O Backend verifica o token JWT em cada pedido protegido.
+
 
 
