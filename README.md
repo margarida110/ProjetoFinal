@@ -1,6 +1,6 @@
 # Gestão de Propostas de Projetos Académicos 
 
-Este projeto consiste numa aplicação web Full-Stack desenvolvida para a Unidade Curricular de Programação Web Avançada. O sistema permite a gestão de propostas de "projeto final de curso" num contexto académico.
+Este projeto consiste numa aplicação web desenvolvida para a Unidade Curricular de Programação Web Avançada. O sistema permite a gestão de propostas de "projeto final de curso" num contexto académico.
 
 A solução implementa uma arquitetura **Client-Server**, separando o Frontend (SPA em Vue.js) do Backend (API REST em Node.js), com persistência de dados em **PostgreSQL**.
 
@@ -169,4 +169,5 @@ psql -U postgres -d gestao_projetos -f database/schema.sql
 2. **Integridade de Dados:** O sistema utiliza transações SQL (`BEGIN`, `COMMIT`, `ROLLBACK`) na criação de propostas. Isto garante que uma proposta só é gravada se todas as suas dependências (coorientadores, alunos, keywords) forem gravadas com sucesso.
 
 3. **Proteção de Rotas:** O Frontend utiliza "Navigation Guards" do Vue Router para impedir acesso a páginas privadas sem token. O Backend verifica o token JWT em cada pedido protegido.
+
 
