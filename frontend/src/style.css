@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --bg-color: #f4f4f9;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+.brand { font-size: 1.2rem; font-weight: bold; }
+
+/* Layout e Botões */
+.content { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover { background-color: #2980b9; }
+
+.btn-danger { background-color: #e74c3c; }
+.btn-danger:hover { background-color: #c0392b; }
+
+/* Cards e Forms */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label { font-weight: 600; color: var(--primary-color); }
