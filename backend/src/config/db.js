@@ -9,7 +9,7 @@ const pool = new Pool({
     port: process.env.DB_PORT,
 });
 
-// Teste de conexão
+// Teste de ligação
 pool.on('connect', () => {
     // console.log('Base de dados conectada com sucesso.');
 });
@@ -18,5 +18,6 @@ pool.on('error', (err) => {
     console.error('Erro inesperado no cliente inativo', err);
     process.exit(-1);
 });
+
 
 module.exports = pool;
